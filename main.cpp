@@ -1,5 +1,6 @@
 //
 // Created by Logan Scholfield on 2/4/2021 for CS120 Multiple classes open ended project
+//Style One using _ in variable decloration and  braces that start on the same line
 //Main.cpp file
 //
 using namespace std;
