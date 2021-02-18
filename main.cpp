@@ -1,6 +1,6 @@
 //
 // Created by Logan Scholfield on 2/4/2021 for CS120 Multiple classes open ended project
-//Style 1 using camel case for variable names and Allman style braces
+//Style 2 using camel case for variable names and Allman style braces
 //Main.cpp file
 //
 using namespace std;
