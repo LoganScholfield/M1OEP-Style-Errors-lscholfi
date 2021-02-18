@@ -36,22 +36,22 @@ public:
 
 
     //set Intelligence function to allow user to change the intelligence variable
-    void setIntelligence(int intelligence);
+    void set_intelligence(int intelligence);
 
     //set Charisma function to allow user to change the charisma variable
-    void setCharisma(int charisma);
+    void set_charisma(int charisma);
 
     //set Happiness function to allow user to change the happiness variable
-    void setHappiness(int happiness);
+    void set_happiness(int happiness);
 
     //get intelligence function to allow user to get the intelligence variable
-    int getIntelligence() const;
+    int get_intelligence() const;
 
     //get charisma function to allow user to get the charisma variable
-    int getCharisma() const;
+    int get_charisma() const;
 
     //get happiness function to allow user to get the intelligence variable
-    int getHappiness() const;
+    int get_happiness() const;
 
 
 
@@ -61,7 +61,7 @@ public:
 
     //friend == operator overload function to change outcome when comparing two brain objects
     //this function instead of returning a bool now returns and int referring to how many brain variables are the same in each object
-    friend int operator ==(const Brain& braOne, const Brain& braTwo);
+    friend int operator ==(const Brain& bra_one, const Brain& bra_two);
 
 
 

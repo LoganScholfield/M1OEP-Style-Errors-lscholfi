@@ -23,8 +23,7 @@ using namespace std;
 
 
     //default Glip cnstructor
-    Glip::Glip()
-    {
+    Glip::Glip(){
         string name = "";
         height = 0.0;
         weight = 0.0;
@@ -33,98 +32,84 @@ using namespace std;
         brain = brain;
     }
     //Glip constructor taking in variables except the Brain variable and sets default variables for it
-    Glip::Glip(string name, int height, int weight, Color color, bool horn)
-    {
+    Glip::Glip(string name, int height, int weight, Color color, bool horn){
         this->name = name;
-        setHeight(height);
-        setWeight(weight);
+        set_height(height);
+        set_weight(weight);
         this->color = color;
-        setHorn(horn);
+        set_horn(horn);
         brain = brain;
 
     }
 
     //Glip constructor taking in all variables
-    Glip::Glip(string name, int height, int weight, Color color, bool horn, Brain &brain)
-    {
+    Glip::Glip(string name, int height, int weight, Color color, bool horn, Brain &brain){
         this->name = name;
-        setHeight(height);
-        setWeight(weight);
+        set_height(height);
+        set_weight(weight);
         this->color = color;
-        setHorn(horn);
-        setBrain(brain);
+        set_horn(horn);
+        set_brain(brain);
 
     }
 
     //setName function allowing Glip's name to be changed
-    void Glip::setName(string name)
-    {
+    void Glip::set_name(string name){
         this->name = name;
     }
 
     //setHeight function allowing Glip's height to be changed
-    void Glip::setHeight(int height)
-    {
+    void Glip::set_height(int height){
         this->height = height;
     }
 
     //setWeight function allowing Glip's height to be changed
-    void Glip::setWeight(int weight)
-    {
+    void Glip::set_weight(int weight){
         this->weight = weight;
     }
 
     //setColor function allowing Glip's color to be changed
-    void Glip::setColor(Color color)
-    {
+    void Glip::set_color(Color color){
         this->color = color;
     }
 
     //setHorn function allowing Gip's horn value to be changed
-    void Glip::setHorn(bool horn)
-    {
+    void Glip::set_horn(bool horn){
         this->horn = horn;
     }
 
     //setBrain function allowing Glip's Brain value to be changed
-    void Glip::setBrain(Brain brain)
-    {
+    void Glip::set_brain(Brain brain){
         this->brain = brain;
     }
 
     //getName function allowing access to Glip's name
-    string Glip::getName() const
-    {
+    string Glip::get_name() const{
         return name;
     }
 
     //getHeight function allowing access to Glip's height
-    int Glip::getHeight() const
-    {
+    int Glip::get_height() const{
         return height;
     }
 
     //getWeight function allowing access to Glip's weight
-    int Glip::getWeight() const
-    {
+    int Glip::get_weight() const{
         return weight;
     }
 
     //getColor function allowing access to Glip's color
-    Color Glip::getColor() const
-    {
+    Color Glip::get_color() const{
         return color;
     }
 
     //getHorn function allowing access to Glip's horn value
-    bool Glip::getHorn() const
-    {
+    bool Glip::get_horn() const{
         return horn;
     }
 
     //getBrain function allowing access to Glip's Brain function
-    Brain Glip::getBrain() const
-    {
+    Brain Glip::get_brain() const{
         return brain;
     }
 
@@ -137,11 +122,11 @@ using namespace std;
 
     //printGlip function is a function that allowes for a visual veiw of the created Glip. This function
     //can be a little glitchy
-    void Glip::printGlip(Glip& glip) const
+    void Glip::print_glip(Glip& glip) const
     {
-        Color col = glip.getColor();
+        Color col = glip.get_color();
         int width = 12;
-        width = width + glip.getWeight();
+        width = width + glip.get_weight();
 
         //function sets text color to Glip's color
         if (col == red)
@@ -174,7 +159,7 @@ using namespace std;
         }
 
         //prints horn
-        if(glip.getHorn())
+        if(glip.get_horn())
         {
             cout << setw(width) << " |" << endl;
             cout << setw(width) << " |" << endl;
@@ -187,16 +172,16 @@ using namespace std;
         cout << setw(width) <<  "##0##" << endl;
 
         //for loops make body
-        for (int i = 0; i<glip.getHeight(); i++)
+        for (int i = 0; i<glip.get_height(); i++)
         {
             cout << setw(15);
-            for(int n = 0; n<glip.getWeight(); n++)
+            for(int n = 0; n<glip.get_weight(); n++)
             {
                 cout <<"#";
             }
             cout << "\n" << setw(15);
         }
-        for (int i = 0; i < glip.getHeight(); i++)
+        for (int i = 0; i < glip.get_height(); i++)
         {
             cout << setw(width) << "# #" << endl;
         }
@@ -233,26 +218,26 @@ using namespace std;
 
     //friend == operator overload function to change outcome when comparing two Glip objects
     //this function instead of returning a bool now returns and int referring to how many brain variables are the same in each object
-    int operator == (const Glip& GlipOne, const Glip& GlipTwo)
+    int operator == (const Glip& Glip_one, const Glip& Glip_two)
     {
-        int num = GlipOne.getBrain() == GlipTwo.getBrain();
-        if(GlipOne.getWeight() == GlipTwo.getWeight())
+        int num = Glip_one.get_brain() == Glip_two.get_brain();
+        if(Glip_one.get_weight() == Glip_two.get_weight())
         {
             num++;
         }
-        if(GlipOne.getHeight() == GlipTwo.getHeight())
+        if(Glip_one.get_height() == Glip_two.get_height())
         {
             num++;
         }
-        if(GlipOne.getColor() == GlipTwo.getColor())
+        if(Glip_one.get_color() == Glip_two.get_color())
         {
             num++;
         }
-        if(GlipOne.getName() == GlipTwo.getName())
+        if(Glip_one.get_name() == Glip_two.get_name())
         {
             num++;
         }
-        if(GlipOne.getHorn() == GlipTwo.getHorn())
+        if(Glip_one.get_horn() == Glip_two.get_horn())
         {
             num++;
         }

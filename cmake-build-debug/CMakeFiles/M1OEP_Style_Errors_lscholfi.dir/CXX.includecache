@@ -6,11 +6,31 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/lls3/CLionProjects/M1OEP-Style-Errors-lscholfi/Brain.cpp
+iostream
+-
+iomanip
+-
+Glip.h
+C:/Users/lls3/CLionProjects/M1OEP-Style-Errors-lscholfi/Glip.h
+
 C:/Users/lls3/CLionProjects/M1OEP-Style-Errors-lscholfi/Brain.h
 iostream
 -
 iomanip
 -
+
+C:/Users/lls3/CLionProjects/M1OEP-Style-Errors-lscholfi/Glip.cpp
+iostream
+-
+iomanip
+-
+Brain.h
+C:/Users/lls3/CLionProjects/M1OEP-Style-Errors-lscholfi/Brain.h
+stdlib.h
+-
+Glip.h
+C:/Users/lls3/CLionProjects/M1OEP-Style-Errors-lscholfi/Glip.h
 
 C:/Users/lls3/CLionProjects/M1OEP-Style-Errors-lscholfi/Glip.h
 iostream

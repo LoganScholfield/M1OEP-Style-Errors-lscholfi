@@ -14,8 +14,7 @@ using namespace std;
 
 
 //creation of color emus used as a variable in Glip objects
-enum Color
-        {
+enum Color{
     red, orange, yellow, green, blue, purple, grey
         };
 
@@ -48,63 +47,55 @@ public:
 
 
     //setName function allowing Glip's name to be changed
-    void setName(string name);
+    void set_name(string name);
 
 
     //setHeight function allowing Glip's height to be changed
-    void setHeight(int height);
+    void set_height(int height);
 
 
     //setWeight function allowing Glip's height to be changed
-    void setWeight(int weight);
+    void set_weight(int weight);
 
 
     //setColor function allowing Glip's color to be changed
-    void setColor(Color color);
+    void set_color(Color color);
 
 
     //setHorn function allowing Gip's horn value to be changed
-    void setHorn(bool horn);
+    void set_horn(bool horn);
 
 
     //setBrain function allowing Glip's Brain value to be changed
-    void setBrain(Brain brain);
+    void set_brain(Brain brain);
 
 
     //getName function allowing access to Glip's name
-    string getName() const;
+    string get_name() const;
 
 
     //getHeight function allowing access to Glip's height
-    int getHeight() const;
+    int get_height() const;
 
 
     //getWeight function allowing access to Glip's weight
-    int getWeight() const;
+    int get_weight() const;
 
 
     //getColor function allowing access to Glip's color
-    Color getColor() const;
+    Color get_color() const;
 
 
     //getHorn function allowing access to Glip's horn value
-    bool getHorn() const;
+    bool get_horn() const;
 
 
     //getBrain function allowing access to Glip's Brain function
-    Brain getBrain() const;
-
-
-    //int getHappiness() const
-    //{
-     //return brain.getHappiness();
-    //}
-
-
+    Brain get_brain() const;
 
     //printGlip function is a function that allowes for a visual veiw of the created Glip. This function
     //can be a little glitchy
-    void printGlip(Glip& glip) const;
+    void print_glip(Glip& glip) const;
 
 
 
@@ -118,7 +109,7 @@ public:
 
     //friend == operator overload function to change outcome when comparing two Glip objects
     //this function instead of returning a bool now returns and int referring to how many brain variables are the same in each object
-    friend int operator == (const Glip& GlipOne, const Glip& GlipTwo);
+    friend int operator == (const Glip& Glip_one, const Glip& Glip_two);
 
 
 
