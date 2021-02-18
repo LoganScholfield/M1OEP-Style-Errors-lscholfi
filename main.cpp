@@ -8,7 +8,7 @@ using namespace std;
 #include <stdlib.h>
 #include "Brain.h"
 #include <string>
-
+//test
 
 
 //compataility function that tests the similarity between two Glip objects
