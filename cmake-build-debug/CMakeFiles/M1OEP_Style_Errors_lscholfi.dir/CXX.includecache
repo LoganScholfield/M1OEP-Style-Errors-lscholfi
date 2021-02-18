@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/lls3/CLionProjects/M1OEP-Style-Errors-lscholfi/Brain.h
+iostream
+-
+iomanip
+-
+
+C:/Users/lls3/CLionProjects/M1OEP-Style-Errors-lscholfi/Glip.h
+iostream
+-
+iomanip
+-
+Brain.h
+C:/Users/lls3/CLionProjects/M1OEP-Style-Errors-lscholfi/Brain.h
+stdlib.h
+-
+
+C:/Users/lls3/CLionProjects/M1OEP-Style-Errors-lscholfi/main.cpp
+iostream
+-
+Glip.h
+C:/Users/lls3/CLionProjects/M1OEP-Style-Errors-lscholfi/Glip.h
+stdlib.h
+-
+Brain.h
+C:/Users/lls3/CLionProjects/M1OEP-Style-Errors-lscholfi/Brain.h
+string
+-
+
